@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Store</title>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand navbar-primary bg-primary sticky-top">
+      <div class="navbar-brand ms-3 text-white">Store Manager</div>
+    </nav>
+
+    <!-- form -->
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="card-title">Create a Store</h1>
+        </div>
+        <div class="card-body">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="name" class="form-label">Store Name:</label>
+              <input type="text" class="form-control" name="name" required />
+            </div>
+            <button type="submit" class="btn btn-primary float-end px-3">
+              Create Store
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

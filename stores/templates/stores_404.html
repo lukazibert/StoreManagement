@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Not Found</title>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand navbar-primary bg-primary sticky-top">
+      <div class="navbar-brand ms-3 text-white">Store Manager</div>
+    </nav>
+
+    <!-- error message -->
+    <div class="container justify-content-center">
+      <h1 class="mt-4">Page Not Found</h1>
+      <div class="mt-4">The Store you are trying to reach does not exist.</div>
+      <a href="{% url 'stores:store_list' %}" class="btn btn-primary mt-4"
+        >Go Back</a
+      >
+    </div>
+  </body>
+</html>
