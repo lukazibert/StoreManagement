@@ -21,7 +21,7 @@ Before you begin, make sure you have the following installed on your machine:
 2. Navigate to the project directory:
 
    ```shell
-   cd your-repo
+   cd StoreManagement
    ```
 
 3. Create a virtual environment to isolate project dependencies:
