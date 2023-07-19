@@ -27,7 +27,7 @@ Before you begin, make sure you have the following installed on your machine:
 3. Create a virtual environment to isolate project dependencies:
 
    ```shell
-   python -m venv env
+   python3 -m venv env
    ```
 
 4. Activate the virtual environment:
