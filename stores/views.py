@@ -24,9 +24,6 @@ def add_store(request):
         return render(request, "add_store.html")
     
 def view_employees(request, store_id):
-    # store = Store.objects.get(id=store_id)
-    # employees = store.employees.all()
-    # return render(request, "store_employees.html", {'store': store, 'employees': employees})
     try:
         store = get_object_or_404(Store, id=store_id)
         employees = store.employees.all()
