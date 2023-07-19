@@ -15,7 +15,7 @@ Before you begin, make sure you have the following installed on your machine:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone 
+   git clone https://github.com/lukazibert/StoreManagement.git
    ```
 
 2. Navigate to the project directory:
